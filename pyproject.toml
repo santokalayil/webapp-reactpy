@@ -8,7 +8,16 @@ packages = [{include = "webapp_reactpy"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+reactpy = {extras = ["fastapi", "flask", "sanic", "starlette", "tornado"], version = "^1.0.2"}
+fastapi = "^0.101.0"
+uvicorn = "^0.23.2"
 
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^6.1.0"
+autopep8 = "^2.0.2"
+ipykernel = "^6.25.1"
+pytest = "^7.4.0"
 
 [build-system]
 requires = ["poetry-core"]
